@@ -18,6 +18,7 @@
 	    <%= navigation :header %>
 	    <%= link_to image_tag('logo.png'), root_path %>
 	  </div>
+	  
 	  <div id="content" class="wrapper">
 	    <div class="inner">
 	      <div id="main">
@@ -27,12 +28,23 @@
 	      <div id="sidebar">
 	        <div class="top"></div>
 	        <div class="body">
-	          
+	          <div class="polaroid">
+	            <%= link_to image_tag('ritzy-building-small.png'), '/images/ritzy-building.png', :rel => 'facebox' %>
+	            <p>The Ritzy Lunch &#8212; Clarksburg, WV</p>
+	          </div>
 	        </div>
 	      </div>
 	      
+	      <span id="stamp">Over <strong>75 years</strong> and counting!</span>
+	      
 	      <div class="clearfix"></div>
 	    </div>
+	  </div>
+	  
+	  <div id="ftr" class="wrapper">
+	    <p class="left">456 West Pike Street<br />Clarksburg, WV 26301</p>
+	    <p class="right">Antonio B. Selario, Owner<br />Phone (304) 622-3600</p>
+	    <div class="clearfix"></div>
 	  </div>
 	</body>	
 </html>

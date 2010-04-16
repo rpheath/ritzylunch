@@ -56,3 +56,6 @@ blockquote, q {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
+strong {
+  font-weight: bold;
+}
