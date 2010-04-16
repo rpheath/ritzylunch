@@ -19,7 +19,7 @@
 	    <%= link_to image_tag('logo.png'), root_path %>
 	  </div>
 	  
-	  <div id="content" class="wrapper">
+	  <div id="content" class="wrapper rounded">
 	    <div class="inner">
 	      <div id="main">
 	        <%= yield %>
@@ -33,16 +33,18 @@
 	            <p>The Ritzy Lunch &#8212; Clarksburg, WV</p>
 	          </div>
 	        </div>
+	        <span id="stamp">Over <strong>75 years</strong> and counting!</span>
 	      </div>
-	      
-	      <span id="stamp">Over <strong>75 years</strong> and counting!</span>
 	      
 	      <div class="clearfix"></div>
 	    </div>
 	  </div>
 	  
 	  <div id="ftr" class="wrapper rounded">
-	    <p class="left">Ritzy Lunch Hot Dogs LLC<br /><%= link_to 'Site Management' %></p>
+	    <p class="left">
+	      <strong>Ritzy Lunch Hot Dogs LLC</strong><br />
+	      by <%= link_to 'Formed Function LLC', 'http://www.formedfunction.com', :rel => 'external' %>
+	      | <%= link_to 'Site Management' %></p>
 	    <p class="right">Antonio B. Selario, Owner<br />Phone (304) 622-3600</p>
 	    <div class="clearfix"></div>
 	  </div>

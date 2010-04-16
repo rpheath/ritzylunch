@@ -2,6 +2,7 @@ body, html {
   font-family: helvetica;
   font-size: 16px;
   background: #fbf8f1 url(../images/background.png) repeat-x left top;
+  background: #500505 url(../images/background-red.png) repeat-x left top;
 }
 .wrapper {
   width: 850px;
@@ -43,12 +44,16 @@ body, html {
 }
 #content {
   background: #fff;
-  -moz-box-shadow: 0px 3px 6px #ddd;
-  -webkit-box-shadow: 0px 3px 6px #ddd;
-  box-shadow: 0px 3px 6px #ddd;
+  -moz-box-shadow: 0px 3px 6px #bbb;
+  -webkit-box-shadow: 0px 3px 6px #bbb;
+  box-shadow: 0px 3px 6px #bbb;
   margin-bottom: 15px;
   padding: 4px;
   position: relative;
+  
+  -moz-box-shadow: 0px 3px 6px #444;
+  -webkit-box-shadow: 0px 3px 6px #444;
+  box-shadow: 0px 3px 6px #444;
 }
 #content .inner {
   border: 3px double #EFECE5;
@@ -78,6 +83,8 @@ body, html {
   -webkit-border-top-left-radius: 5px;
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
   
   height: 400px;
 }
@@ -105,16 +112,22 @@ body, html {
   background: #F3F0E9;
   padding: 10px 5px;
   line-height: 130%;
+  
+  background: #3e0202;
 }
 #ftr p,
 #ftr a:link,
 #ftr a:visited {
   color: #999;
   font-size: 12px;
+  
+  color: #6a3b3b;
 }
 #ftr a:hover {
   text-decoration: none;
   color: #555;
+  
+  color: #794444;
 }
 #ftr p {
   padding: 0 10px;
