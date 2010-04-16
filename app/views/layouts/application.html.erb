@@ -14,8 +14,13 @@
 		<%= yield :head %>
 	</head>
 	<body>
-	  
-	  <%= yield %>
-	  
+	  <div id="hdr" class="wrapper">
+	    
+	  </div>
+	  <div id="content" class="wrapper">
+	    <div class="inner">
+	      <%= yield %>
+	    </div>
+	  </div>
 	</body>	
 </html>

@@ -1,0 +1,25 @@
+body, html {
+  font: 16px normal helvetica;
+  background: #fbf8f1 url(../images/background.png) repeat-x left top;
+}
+.wrapper {
+  width: 850px;
+  margin: auto;
+}
+#hdr {
+  height: 125px;
+}
+#content {
+  background: #fff;
+  -moz-box-shadow: 0px 3px 6px #ddd;
+  -webkit-box-shadow: 0px 3px 6px #ddd;
+  box-shadow: 0px 3px 6px #ddd;
+  margin-bottom: 25px;
+  padding: 4px;
+}
+#content .inner {
+  border: 3px double #EFECE5;
+  padding: 25px;
+  
+  height: 400px;
+}
