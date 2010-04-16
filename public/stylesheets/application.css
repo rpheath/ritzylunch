@@ -46,7 +46,7 @@ body, html {
   -moz-box-shadow: 0px 3px 6px #ddd;
   -webkit-box-shadow: 0px 3px 6px #ddd;
   box-shadow: 0px 3px 6px #ddd;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   padding: 4px;
   position: relative;
 }
@@ -79,7 +79,7 @@ body, html {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
   
-  height: 300px;
+  height: 400px;
 }
 #sidebar .body,
 #sidebar .top {
@@ -100,4 +100,25 @@ body, html {
   line-height: 170%;
   color: #777;
   font-size: 13px;
+}
+#ftr {
+  background: #F3F0E9;
+  padding: 10px 5px;
+  line-height: 130%;
+}
+#ftr p,
+#ftr a:link,
+#ftr a:visited {
+  color: #999;
+  font-size: 12px;
+}
+#ftr a:hover {
+  text-decoration: none;
+  color: #555;
+}
+#ftr p {
+  padding: 0 10px;
+}
+#ftr .right {
+  text-align: right;
 }
