@@ -16,11 +16,22 @@
 	<body>
 	  <div id="hdr" class="wrapper">
 	    <%= navigation :header %>
-	    <%= link_to image_tag('ritzy-lunch.png'), root_path %>
+	    <%= link_to image_tag('logo.png'), root_path %>
 	  </div>
 	  <div id="content" class="wrapper">
 	    <div class="inner">
-	      <%= yield %>
+	      <div id="main">
+	        <%= yield %>
+	      </div>
+	      
+	      <div id="sidebar">
+	        <div class="top"></div>
+	        <div class="body">
+	          
+	        </div>
+	      </div>
+	      
+	      <div class="clearfix"></div>
 	    </div>
 	  </div>
 	</body>	

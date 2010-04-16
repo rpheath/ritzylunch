@@ -52,6 +52,30 @@ body, html {
 #content .inner {
   border: 3px double #EFECE5;
   padding: 25px;
+}
+#sidebar {
+  float: right;
+  margin-top: -20px;
+}
+#sidebar .body {
+  width: 250px;
+  padding: 20px;
+  margin-right: -45px;
+  background: #eee;
+  border: 5px solid #ddd;
+  border-right: 1px solid #ddd;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
   
-  height: 400px;
+  height: 300px;
+}
+#sidebar .body,
+#sidebar .top {
+  margin-right: -44px;
+}
+#sidebar .top {
+  height: 11px;
+  background: url(../images/sidebar-corner.png) no-repeat right top;
 }
