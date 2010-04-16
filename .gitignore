@@ -1,0 +1,9 @@
+log/*.log
+tmp/
+tmp/**/*
+.DS_Store
+db/*.sqlite3
+coverage
+vendor/plugins/**/.gitignore
+vendor/rails/.gitignore
+mkmf.log
