@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title><%= @page_title || 'The Ritzy Lunch' %></title>
+    <meta name="keywords" content="ritzy lunch, the ritzy, ritzy, hotdogs, antonio selario, clarksburg, west virginia, wv" />
+    <meta name="description" content="The Ritzy Lunch" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<%= stylesheet_link_tag 'base' -%>
+		<!--[if IE 7]><%= stylesheet_link_tag 'ie7' -%><![endif]-->
+		<!--[if IE 8]><%= stylesheet_link_tag 'ie8' -%><![endif]-->
+		<%#= google_jquery %>
+		<%#= javascript_include_tag 'facebox', 'jquery-curvycorners-pack', 'jquery.plugins', 'application' -%>
+		<%= yield :head %>
+	</head>
+	<body>
+	  
+	  <%= yield %>
+	  
+	</body>	
+</html>
