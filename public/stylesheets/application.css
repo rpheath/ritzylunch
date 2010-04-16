@@ -1,5 +1,6 @@
 body, html {
-  font: 16px normal helvetica;
+  font-family: helvetica;
+  font-size: 16px;
   background: #fbf8f1 url(../images/background.png) repeat-x left top;
 }
 .wrapper {
@@ -8,6 +9,37 @@ body, html {
 }
 #hdr {
   
+}
+#hdr ul.navigation {
+  float: right;
+}
+#hdr ul.navigation li {
+  float: left;
+  margin: 20px 0 0 13px;
+}
+#hdr ul.navigation a:link,
+#hdr ul.navigation a:visited {
+  font-size: 14px;
+  padding: 8px;
+  color: #777;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #fff;
+}
+#hdr ul.navigation li.current a:link,
+#hdr ul.navigation li.current a:visited,
+#hdr ul.navigation li.current a:hover {
+  background: #E5E2DC;
+  color: #444;
+  text-decoration: none;
+}
+#hdr ul.navigation a:hover {
+  text-decoration: underline;
 }
 #content {
   background: #fff;

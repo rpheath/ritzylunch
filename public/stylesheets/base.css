@@ -42,3 +42,17 @@ q:before, q:after {
 blockquote, q {
 	quotes: "" "";
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix {
+  clear: both;
+}
+.rounded {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}

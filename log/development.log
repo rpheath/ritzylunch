@@ -412,3 +412,435 @@ Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:39:47) [GET]
 Rendering template within layouts/application
 Rendering home/index
 Completed in 3ms (View: 2, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:45:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 19ms (View: 18, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:45:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:45:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:47:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:47:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:48:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:48:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:48:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:48:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:49:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:49:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:49:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:50:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2010-04-15 23:50:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"about"}
+Rendering template within layouts/application
+Rendering about/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://ritzylunch.local/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:50:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2010-04-15 23:50:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"about"}
+Rendering template within layouts/application
+Rendering about/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:50:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:52:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2010-04-15 23:52:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"about"}
+Rendering template within layouts/application
+Rendering about/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:52:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:52:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 62ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2010-04-15 23:52:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"about"}
+Rendering template within layouts/application
+Rendering about/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:52:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2010-04-15 23:53:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"about"}
+Rendering template within layouts/application
+Rendering about/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:53:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:53:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2010-04-15 23:53:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"about"}
+Rendering template within layouts/application
+Rendering about/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://ritzylunch.local/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-15 23:53:39) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-16 00:01:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 19ms (View: 18, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MenuController#index (for 127.0.0.1 at 2010-04-16 00:01:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"menu"}
+Rendering template within layouts/application
+Rendering menu/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://ritzylunch.local/menu]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2010-04-16 00:01:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"about"}
+Rendering template within layouts/application
+Rendering about/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://ritzylunch.local/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationController#index (for 127.0.0.1 at 2010-04-16 00:01:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"location"}
+Rendering template within layouts/application
+Rendering location/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://ritzylunch.local/location]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-16 00:01:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-16 00:01:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-16 00:02:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MenuController#index (for 127.0.0.1 at 2010-04-16 00:02:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"menu"}
+Rendering template within layouts/application
+Rendering menu/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/menu]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2010-04-16 00:02:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"about"}
+Rendering template within layouts/application
+Rendering about/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationController#index (for 127.0.0.1 at 2010-04-16 00:02:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"location"}
+Rendering template within layouts/application
+Rendering location/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/location]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-16 00:02:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MenuController#index (for 127.0.0.1 at 2010-04-16 00:02:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"menu"}
+Rendering template within layouts/application
+Rendering menu/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/menu]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2010-04-16 00:02:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"about"}
+Rendering template within layouts/application
+Rendering about/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationController#index (for 127.0.0.1 at 2010-04-16 00:02:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"location"}
+Rendering template within layouts/application
+Rendering location/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/location]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-16 00:02:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-16 00:05:39) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-16 00:06:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-16 00:06:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MenuController#index (for 127.0.0.1 at 2010-04-16 00:06:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"menu"}
+Rendering template within layouts/application
+Rendering menu/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/menu]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2010-04-16 00:06:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"about"}
+Rendering template within layouts/application
+Rendering about/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationController#index (for 127.0.0.1 at 2010-04-16 00:06:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"location"}
+Rendering template within layouts/application
+Rendering location/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/location]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-16 00:06:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MenuController#index (for 127.0.0.1 at 2010-04-16 00:07:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"menu"}
+Rendering template within layouts/application
+Rendering menu/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/menu]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#index (for 127.0.0.1 at 2010-04-16 00:07:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"about"}
+Rendering template within layouts/application
+Rendering about/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LocationController#index (for 127.0.0.1 at 2010-04-16 00:07:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"location"}
+Rendering template within layouts/application
+Rendering location/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/location]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-16 00:07:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://ritzylunch.local/home]
