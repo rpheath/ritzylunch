@@ -8,15 +8,20 @@ body, html {
   width: 850px;
   margin: auto;
 }
-#hdr {
-  
+#strip {
+  padding: 5px;
+  background: #111;
+}
+#hdr img {
+  margin-top: 2px;
 }
 #hdr ul.navigation {
   float: right;
 }
 #hdr ul.navigation li {
   float: left;
-  margin: 20px 0 0 13px;
+  margin: 0 0 0 13px;
+  padding-top: 30px;
 }
 #hdr ul.navigation a:link,
 #hdr ul.navigation a:visited {
@@ -31,6 +36,9 @@ body, html {
   border-radius: 5px;
   font-weight: bold;
   text-shadow: 1px 1px 1px #fff;
+}
+#hdr ul.navigation li.current {
+  background: url(../images/triangle.png) no-repeat center -3px;
 }
 #hdr ul.navigation li.current a:link,
 #hdr ul.navigation li.current a:visited,
@@ -51,9 +59,9 @@ body, html {
   padding: 4px;
   position: relative;
   
-  -moz-box-shadow: 0px 3px 6px #444;
-  -webkit-box-shadow: 0px 3px 6px #444;
-  box-shadow: 0px 3px 6px #444;
+  -moz-box-shadow: 0px 3px 6px #222;
+  -webkit-box-shadow: 0px 3px 6px #222;
+  box-shadow: 0px 3px 6px #222;
 }
 #content .inner {
   border: 3px double #EFECE5;
