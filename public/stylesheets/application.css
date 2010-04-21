@@ -76,9 +76,13 @@ body, html {
   text-align: center;
   width: 285px;
 }
+#main {
+  float: left;
+  width: 515px;
+}
 #sidebar {
   float: right;
-  margin-top: -20px;
+  margin-top: -5px;
 }
 #sidebar .body {
   width: 250px;

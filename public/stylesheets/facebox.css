@@ -78,6 +78,15 @@
   vertical-align: middle;
 }
 
+#facebox .footer p.caption {
+  color: #555;
+  font-size: 12px;
+  float: left;
+  margin-right: 100px;
+  line-height: 130%;
+  padding-top: 3px;
+}
+
 #facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {
   height: 10px;
   width: 10px;
