@@ -6,7 +6,7 @@
     <meta name="keywords" content="ritzy lunch, the ritzy, ritzy, hotdogs, antonio selario, clarksburg, west virginia, wv" />
     <meta name="description" content="The Ritzy Lunch" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<%= stylesheet_link_tag 'base', 'facebox', 'application' -%>
+		<%= stylesheet_link_tag 'base', 'facebox', 'flash', 'application' -%>
 		<!--[if IE 7]><%= stylesheet_link_tag 'ie7' -%><![endif]-->
 		<!--[if IE 8]><%= stylesheet_link_tag 'ie8' -%><![endif]-->
 		<%= google_jquery %>
@@ -24,6 +24,7 @@
 	  <div id="content" class="wrapper rounded">
 	    <div class="inner">
 	      <div id="main">
+	        <%= display_flash_messages %>
 	        <%= yield %>
 	      </div>
 	      
@@ -46,7 +47,11 @@
 	    <p class="left">
 	      <strong>Ritzy Lunch Hot Dogs LLC</strong><br />
 	      by <%= link_to 'Formed Function LLC', 'http://www.formedfunction.com', :rel => 'external' %>
-	      | <%= link_to 'Site Management' %></p>
+	      | <%= link_to 'Site Management', new_session_path, :id => 'admin-link' %>
+	      <% if logged_in? %>
+	      | <%= link_to 'Logout', logout_path %>
+	      <% end %>
+	    </p>
 	    <p class="right">Antonio B. Selario, Owner<br />Phone (304) 622-3600</p>
 	    <div class="clearfix"></div>
 	  </div>

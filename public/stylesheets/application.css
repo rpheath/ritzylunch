@@ -120,6 +120,25 @@ body, html {
   color: #777;
   font-size: 13px;
 }
+label {
+  display: block;
+  color: #777;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+form p {
+  margin-bottom: 10px;
+}
+input.text {
+  padding: 5px;
+  font-size: 16px;
+  width: 75%;
+}
+p.submission {
+  border-top: 3px double #ddd;
+  padding-top: 5px;
+  margin-top: 10px;
+}
 #ftr {
   background: #F3F0E9;
   padding: 10px 5px;

@@ -19,4 +19,15 @@ $(function() {
       if ($(this).attr('title')) $('#facebox p.caption').html($(this).attr('title'))
     })
 	});
+	
+  setTimeout(function() { $('p.notice, p.warning, p.error').fadeOut(1500); }, 25000)
+  
+  $('a#admin-link').click(function(e) {
+    e.preventDefault()
+    
+    $.get(this.href, function(data) {
+      $.facebox(data)
+      $('input#user_username').focus()
+    })
+  })
 });

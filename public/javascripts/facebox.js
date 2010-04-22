@@ -206,7 +206,7 @@
       preload.slice(-1).src = $(this).css('background-image').replace(/url\((.+)\)/, '$1')
     })
 
-    $('#facebox .close, #facebox').click($.facebox.close)
+    $('#facebox .close').click($.facebox.close)
     $('#facebox .close_image').attr('src', $.facebox.settings.closeImage)
   }
 

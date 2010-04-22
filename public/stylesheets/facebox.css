@@ -27,8 +27,9 @@
 }
 #facebox h1 {
   color: #1D3A5A;
-  font-size: 18px;
-  letter-spacing: -1px;
+  color: #444;
+  font-size: 20px;
+  letter-spacing: 0;
   line-height: 125%;
   margin-bottom: 10px;
   border-bottom: 1px solid #eee;
@@ -52,6 +53,9 @@
   padding: 10px;
   background: #fff;
   width: 450px;
+}
+#facebox .body form {
+  padding: 15px;
 }
 
 #facebox .loading {
