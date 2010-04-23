@@ -20,7 +20,7 @@ $(function() {
     })
 	});
 	
-  setTimeout(function() { $('p.notice, p.warning, p.error').fadeOut(1500); }, 25000)
+  setTimeout(function() { $('p.notice, p.warning, p.error').fadeOut(1500); }, 15000)
   
   $('a#admin-link').click(function(e) {
     e.preventDefault()
