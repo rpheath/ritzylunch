@@ -14,7 +14,9 @@
 		<%= yield :head %>
 	</head>
 	<body>
-	  <div id="strip"></div>
+	  <div id="strip">
+	    <%= display_flash_messages %>
+	  </div>
 	  
 	  <div id="hdr" class="wrapper">
 	    <%= navigation :header %>
@@ -24,7 +26,6 @@
 	  <div id="content" class="wrapper rounded">
 	    <div class="inner">
 	      <div id="main">
-	        <%= display_flash_messages %>
 	        <%= yield %>
 	      </div>
 	      

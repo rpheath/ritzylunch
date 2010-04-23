@@ -2,7 +2,15 @@ p.notice,
 p.warning,
 p.error {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin: 5px auto;
+  width: 850px;
+  padding: 10px;
+  line-height: 155%;
+  background-color: #222;
+  border: 1px solid #333;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 p.notice span,
@@ -11,12 +19,12 @@ p.error span {
   float: left;
   width: 42px;
   height: 32px;
-  margin-top: -10px;
 }
 
 p.notice {
   /*background: url(../images/flash-notice-bg.jpg) repeat-x left top;*/
   color: #41612f; 
+  color: #9FC379;
 }
 p.notice span {
   background: url(../images/flash-check.png) no-repeat left top;
@@ -25,6 +33,7 @@ p.notice span {
 p.warning {
   /*background: url(../images/flash-warning-bg.jpg) repeat-x left -10px;*/
   color: #a26a1a;
+  color: #ffffcc;
 }
 p.warning span {
   background: url(../images/flash-warning.png) no-repeat left top;
