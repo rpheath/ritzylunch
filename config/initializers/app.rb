@@ -1,0 +1,1 @@
+['redcloth'].each { |lib| require lib }
