@@ -1,3 +1,30 @@
 <%= title @about.page_title %>
 
 <%= @about.content_html %>
+
+<div class="divider"></div>
+
+<div id="history" class="photos">
+  <%= subtitle "Historical Photos" %>
+  
+  <p>
+    We've preserved some of our historical photographs for your viewing
+    pleasure. We hope you like them.
+  </p>
+  
+  <ul class="flickr history"></ul>
+  <div class="inline-loading">
+    <p>
+      Loading Photos... <%= image_tag 'inline-loading.gif' %>
+    </p>
+  </div>
+  
+  <div class="clearfix"></div>
+  
+  <br />
+  
+  <p class="tright">
+    <%= link_to "View All of Ritzy's Photos &#187;", 
+      "http://www.flickr.com/photos/49421777@N07/", :rel => 'external' %>
+  </p>
+</div>

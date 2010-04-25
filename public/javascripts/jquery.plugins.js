@@ -8,6 +8,30 @@
     }
   }
   
+  $.fn.flickrPhotos = function(options) {
+    var settings = $.extend({
+      limit: 10,
+      user_id: '95448703@N00', // '49421777@N07'
+      tags: 'rpheath'          // 'bikenight'
+    }, options || {})
+    
+    return $(this).jflickrfeed({
+      limit: settings.limit,
+      qstrings: {
+        id: settings.user_id,
+        tags: settings.tags
+      },
+      itemTemplate: '<li><a href="{{image}}" title="{{title}}"><img src="{{image_s}}" alt="{{title}}" /></a></li>'
+    }, function(data) {
+      $(this).find('a').facebox().click(function() {
+          $('#facebox p.caption').empty()
+          if ($(this).attr('title')) $('#facebox p.caption').html($(this).attr('title'))
+        }).hoverText()
+        $('.inline-loading').remove()
+        $('#sidebar .body').setHeight()
+    })
+  }
+  
   $.fn.hoverText = function() {
     return $(this).qtip({
       style: 'flickr',

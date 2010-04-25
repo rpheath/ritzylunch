@@ -127,7 +127,7 @@ div.divider {
   background: url(../images/divider.jpg) no-repeat left center;
   margin-bottom: 10px;
 }
-#bikenight ul.flickr li {
+.photos ul.flickr li {
   float: left;
   margin: 0;
   width: 88px;
@@ -135,7 +135,7 @@ div.divider {
   padding: 12px 0 0 12px;
   background: url(../images/photo-bg.png) no-repeat center center;
 }
-#bikenight ul.flickr li img {
+.photos ul.flickr li img {
   border: 1px solid #444;
   border-left: 0;
   border-top: 0;
@@ -143,7 +143,8 @@ div.divider {
 #flickr-loading img {
   margin-bottom: -4px;
 }
-#bikenight p {
+#bikenight p,
+#history p {
   line-height: 130%;
 }
 #sidebar {
