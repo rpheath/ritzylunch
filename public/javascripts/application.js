@@ -20,8 +20,8 @@ $(function() {
       $('#facebox p.caption').empty()
       if ($(this).attr('title')) $('#facebox p.caption').html($(this).attr('title'))
     })
-    $('#sidebar .body').setHeight()
     $('#flickr-loading').remove()
+    $('#sidebar .body').setHeight()
 	});
 	
   setTimeout(function() { $('p.notice, p.warning, p.error').fadeOut(1500); }, 15000)
