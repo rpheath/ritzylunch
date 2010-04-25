@@ -96,9 +96,6 @@ h2.sub-title {
   color: #222;
   padding-bottom: 8px;
 }
-div.intro {
-  
-}
 div.intro p {
   font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
   color: #555;
@@ -130,12 +127,6 @@ div.divider {
   background: url(../images/divider.jpg) no-repeat left center;
   margin-bottom: 10px;
 }
-#bikenight {
-  
-}
-#bikenight ul.flickr {
-  
-}
 #bikenight ul.flickr li {
   float: left;
   margin: 0;
@@ -149,12 +140,8 @@ div.divider {
   border-left: 0;
   border-top: 0;
 }
-#bikenight ul.flickr a:link,
-#bikenight ul.flickr a:visited {
-  
-}
-#bikenight ul.flickr a:hover {
-  
+#flickr-loading img {
+  margin-bottom: -4px;
 }
 #bikenight p {
   line-height: 130%;
@@ -176,8 +163,6 @@ div.divider {
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-bottomright: 5px;
   -webkit-border-bottom-right-radius: 5px;
-  
-  height: 650px;
 }
 #sidebar .body,
 #sidebar .top {

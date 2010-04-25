@@ -29,4 +29,18 @@
   <p>Below are a few photos from Bike Night. Enjoy!</p>
   
   <ul class="flickr"></ul>
+  <div id="flickr-loading">
+    <p>
+      Loading Photos... <%= image_tag 'inline-loading.gif' %>
+    </p>
+  </div>
+  
+  <div class="clearfix"></div>
+  
+  <br />
+  
+  <p class="tright">
+    <%= link_to "View All of Ritzy's Photos &#187;", 
+      "http://www.flickr.com/photos/49421777@N07/", :rel => 'external' %>
+  </p>
 </div>
