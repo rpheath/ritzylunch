@@ -89,6 +89,7 @@
   margin-right: 100px;
   line-height: 130%;
   padding-top: 3px;
+  font-family: helvetica, arial;
 }
 
 #facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {

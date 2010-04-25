@@ -31,6 +31,7 @@ $(function() {
     
     $.get(this.href, function(data) {
       $.facebox(data)
+      $('#facebox p.caption').empty()
       $('input#user_username').focus()
     })
   })
