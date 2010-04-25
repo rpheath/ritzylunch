@@ -1,1 +1,19 @@
+<% content_for :head do %>
+  <%= google_maps_javascript_include %>
+  <%= javascript_include_tag 'map' %>
+<% end %>
+
 <%= title "Come and See Us!" %>
+
+<div id="map" class="rounded"></div>
+
+<br />
+
+<% form_tag directions_location_path do %>
+  City: <%= text_field_tag :city %><br />
+  State: <%= select :location, :state, States.to_options %><br />
+  Zip: <%= text_field_tag :zip %>
+  <p class="submission">
+    <%= submit_tag 'Get Directions' %>
+  </p>
+<% end %>

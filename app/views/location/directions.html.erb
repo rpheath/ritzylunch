@@ -1,0 +1,16 @@
+<% content_for :head do %>
+  <%= google_maps_javascript_include %>
+  <%= javascript_include_tag 'directions' %>
+<% end %>
+
+<%= title "Come and See Us!" %>
+
+<div id="map" class="rounded"></div>
+
+<%= hidden_field_tag :map_directions, @result %>
+
+<div id="directions"></div>
+
+<br />
+
+<p class="tright"><%= link_to 'Get New Directions &#187;', location_path %></p>

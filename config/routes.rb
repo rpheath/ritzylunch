@@ -6,14 +6,16 @@ ActionController::Routing::Routes.draw do |map|
   map.about '/about', :controller => 'about'
   map.location '/location', :controller => 'location'
   
+  map.resources :location, :only => [:index], :collection => { :directions => :any }
+  
+  map.resources :testimonials, :only => [:index]
+  
   map.namespace :admin do |admin|
     admin.resources :base, :only => [:index]
     admin.resources :users
     admin.resources :about, :only => [:edit, :update, :show]
     admin.resources :testimonials
   end
-  
-  map.resources :testimonials, :only => [:index]
   
   map.resource :session
   map.with_options :controller => 'sessions' do |path|
