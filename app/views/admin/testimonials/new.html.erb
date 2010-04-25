@@ -1,0 +1,8 @@
+<%= title "New Testimonial" %>
+
+<% form_assistant_for [:admin, @testimonial] do |form| %>
+  <%= form.partial 'form' %>
+  <p class="submission">
+    <%= form.submit 'Save Testimonial' %>
+  </p>
+<% end %>

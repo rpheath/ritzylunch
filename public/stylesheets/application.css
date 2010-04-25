@@ -12,6 +12,9 @@ body, html {
   padding: 5px;
   background: #111;
 }
+#hdr {
+  position: relative;
+}
 #hdr img {
   margin-top: 2px;
 }
@@ -49,6 +52,33 @@ body, html {
 }
 #hdr ul.navigation a:hover {
   text-decoration: underline;
+}
+#hdr #testimonial {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 325px;
+}
+#hdr #testimonial p {
+  color: #888;
+  font-size: 13px;
+  line-height: 125%;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+#hdr #testimonial span {
+  display: block;
+  padding-top: 7px;
+  font-family: helvetica;
+}
+#hdr #testimonial p a:link,
+#hdr #testimonial p a:visited {
+  color: #888;
+  font-size: 11px;
+  font-style: normal;
+}
+#hdr #testimonial p a:hover {
+  color: #000;
 }
 #content {
   background: #fff;
@@ -247,4 +277,36 @@ p.submission {
 }
 #ftr .right {
   text-align: right;
+}
+
+.pagination {
+  padding: 10px 0;
+  margin: 10px 0 0 0;
+  border-top: 5px solid #f1f1f1;
+  font-size: 12px;
+}
+.pagination a {
+  padding: 2px 5px 2px 5px;
+  margin: 1px;
+  border: 1px solid #f8f8f8;
+  text-decoration: none;
+  color: #444;
+}
+.pagination a:hover, 
+.pagination a:active {
+  border: 1px solid #ccc;
+  color: #222;
+}
+.pagination span.current {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #222;
+  font-weight: bold;
+  background-color: #222;
+  color: #fff;
+}
+.pagination span.disabled {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  color: #999;
 }
