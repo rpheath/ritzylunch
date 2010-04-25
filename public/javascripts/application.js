@@ -7,7 +7,7 @@ $(function() {
   })
 
   $('ul.flickr').jflickrfeed({
-		limit: 5,
+		limit: 10,
 		qstrings: {
 			id: '95448703@N00',
 			tags: 'rpheath'

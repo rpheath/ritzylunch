@@ -56,7 +56,7 @@ body, html {
   -webkit-box-shadow: 0px 3px 6px #bbb;
   box-shadow: 0px 3px 6px #bbb;
   margin-bottom: 15px;
-  padding: 4px;
+  padding: 5px;
   position: relative;
   
   -moz-box-shadow: 0px 3px 6px #222;
@@ -64,21 +64,94 @@ body, html {
   box-shadow: 0px 3px 6px #222;
 }
 #content .inner {
-  border: 3px double #EFECE5;
   padding: 25px;
+  background: url(../images/main-bg.jpg) repeat-x left top;
 }
 #content #stamp {
   position: absolute;
   top: 13px;
   right: 0;
-  font-size: 18px;
-  color: #999;
+  font-size: 16px;
+  color: #ddd;
   text-align: center;
   width: 285px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px #000;
 }
 #main {
   float: left;
   width: 515px;
+}
+h1.title {
+  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  font-size: 35px;
+  padding-bottom: 27px;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+  text-shadow: 2px 2px 2px #000;
+}
+h2.sub-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  padding-bottom: 8px;
+}
+div.intro {
+  
+}
+div.intro p {
+  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  color: #555;
+  font-size: 21px;
+}
+div.buttons {
+  margin: 15px 0;
+}
+div.buttons a:link,
+div.buttons a:visited {
+  float: left;
+  width: 214px;
+  height: 41px;
+  padding-top: 19px;
+  background: url(../images/button-bg.png) no-repeat center top;
+  text-align: center;
+  color: #500804;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #fff;
+  font-size: 18px;
+  margin-right: 20px;
+}
+div.buttons a:hover {
+  background-position: center -60px;
+  color: #300200;
+}
+div.divider {
+  padding: 20px 0;
+  background: url(../images/divider.jpg) no-repeat left center;
+  margin-bottom: 10px;
+}
+#bikenight {
+  
+}
+#bikenight ul.flickr {
+  margin-left: 30px;
+}
+#bikenight ul.flickr li {
+  float: left;
+  margin: 0 7px 7px 0;
+}
+#bikenight ul.flickr a:link,
+#bikenight ul.flickr a:visited {
+  display: block;
+  padding: 3px 3px 0 3px;
+  border: 2px solid #ddd;
+}
+#bikenight ul.flickr a:hover {
+  border-color: #ccc;
+}
+#bikenight p {
+
+  line-height: 130%;
 }
 #sidebar {
   float: right;
@@ -98,11 +171,11 @@ body, html {
   -moz-border-radius-bottomright: 5px;
   -webkit-border-bottom-right-radius: 5px;
   
-  height: 400px;
+  height: 650px;
 }
 #sidebar .body,
 #sidebar .top {
-  margin-right: -44px;
+  margin-right: -42px;
 }
 #sidebar .top {
   height: 11px;
@@ -119,6 +192,21 @@ body, html {
   line-height: 170%;
   color: #777;
   font-size: 13px;
+  font-family: helvetica, arial;
+}
+#sidebar p.contact {
+  font-size: 14px;
+  font-family: helvetica, arial;
+  color: #666;
+}
+#sidebar h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 10px 0 4px 0;
+  text-shadow: 1px 1px 1px #fff;
+  color: #222;
 }
 label {
   display: block;
@@ -143,6 +231,7 @@ p.submission {
   background: #F3F0E9;
   padding: 10px 5px;
   line-height: 130%;
+  margin-bottom: 10px;
   
   background: #3e0202;
 }
@@ -151,7 +240,7 @@ p.submission {
 #ftr a:visited {
   color: #999;
   font-size: 12px;
-  
+  font-family: helvetica, arial;
   color: #6a3b3b;
 }
 #ftr a:hover {
@@ -162,6 +251,7 @@ p.submission {
 }
 #ftr p {
   padding: 0 10px;
+  margin: 0;
 }
 #ftr .right {
   text-align: right;

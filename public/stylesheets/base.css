@@ -59,3 +59,17 @@ blockquote, q {
 strong {
   font-weight: bold;
 }
+a:link,
+a:visited {
+  color: #300200;
+}
+a:hover {
+  color: #000;
+}
+p {
+  line-height: 150%;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+}

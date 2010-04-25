@@ -1,0 +1,9 @@
+<%= title "Edit About Content" %>
+
+<% form_assistant_for [:admin, @about] do |form| %>
+  <%= form.text_field :page_title %>
+  <%= form.text_area :content %>
+  <p class="submission">
+    <%= form.submit 'Update About Content' %>
+  </p>
+<% end %>

@@ -23,21 +23,30 @@
 	    <%= link_to image_tag('logo.png'), root_path %>
 	  </div>
 	  
-	  <div id="content" class="wrapper rounded">
+	  <div id="content" class="wrapper">
 	    <div class="inner">
 	      <div id="main">
 	        <%= yield %>
 	      </div>
 	      
 	      <div id="sidebar">
+	        <span id="stamp">Over <strong>75 years</strong> and counting!</span>
+	        
 	        <div class="top"></div>
 	        <div class="body">
 	          <div class="polaroid">
 	            <%= link_to image_tag('ritzy-building-small.png'), '/images/ritzy-building.png', :rel => 'facebox' %>
 	            <p>The Ritzy Lunch &#8212; Clarksburg, WV</p>
 	          </div>
+	          
+	          <h3>Recent Announcements</h3>
+	          
+	          <h3>Contact Us</h3>
+	          <p class="contact">
+    	        Do you need to get in touch with us? Feel free to
+    	        call us at (304) 622-3600 or <%= link_to 'send us an email', 'mailto:ritzylunchwv@gmail.com' %>.
+    	      </p>
 	        </div>
-	        <span id="stamp">Over <strong>75 years</strong> and counting!</span>
 	      </div>
 	      
 	      <div class="clearfix"></div>

@@ -8,6 +8,8 @@ ActionController::Routing::Routes.draw do |map|
   
   map.namespace :admin do |admin|
     admin.resources :base, :only => [:index]
+    admin.resources :users
+    admin.resources :about, :only => [:edit, :update, :show]
   end
   
   map.resource :session

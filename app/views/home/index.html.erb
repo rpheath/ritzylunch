@@ -1,1 +1,32 @@
-Home
+<%= title "Welcome to The Ritzy Lunch!" %>
+
+<div class="intro">
+  <p>
+    The Ritzy Lunch is a family-owned business and has been going strong
+    for the past 75 years. We take pride in our dogs, and have since 1933.
+    When we spice up our chili, we know how to do it right!
+  </p>
+</div>
+
+<div class="buttons">
+  <%= link_to 'More About Us &#187;', about_path %>
+  <%= link_to 'See Our Menu &#187;', menu_path %>
+  <div class="clearfix"></div>
+</div>
+
+<div class="divider"></div>
+
+<div id="bikenight">
+  <%= subtitle "Thursday Bike Night" %>
+  
+  <p>
+    Thursday nights are Bike Night at the Ritzy. People from all over bring their
+    bikes to show off. We play games and give away prizes. It's a great time.
+    So if you're in <%= link_to 'our area', location_path %> Thursday, come out 
+    to Bike Night at the Ritzy! We promise you'll have a good time.
+  </p>
+  
+  <p>Below are a few photos from Bike Night. Enjoy!</p>
+  
+  <ul class="flickr"></ul>
+</div>
