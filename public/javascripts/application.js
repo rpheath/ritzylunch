@@ -19,7 +19,7 @@ $(function() {
 	  $('ul.flickr a').facebox().click(function() {
       $('#facebox p.caption').empty()
       if ($(this).attr('title')) $('#facebox p.caption').html($(this).attr('title'))
-    })
+    }).hoverText()
     $('#flickr-loading').remove()
     $('#sidebar .body').setHeight()
 	});
