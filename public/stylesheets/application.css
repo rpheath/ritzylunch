@@ -134,23 +134,29 @@ div.divider {
   
 }
 #bikenight ul.flickr {
-  margin-left: 30px;
+  
 }
 #bikenight ul.flickr li {
   float: left;
-  margin: 0 7px 7px 0;
+  margin: 0;
+  width: 88px;
+  height: 88px;
+  padding: 12px 0 0 12px;
+  background: url(../images/photo-bg.png) no-repeat center center;
+}
+#bikenight ul.flickr li img {
+  border: 1px solid #444;
+  border-left: 0;
+  border-top: 0;
 }
 #bikenight ul.flickr a:link,
 #bikenight ul.flickr a:visited {
-  display: block;
-  padding: 3px 3px 0 3px;
-  border: 2px solid #ddd;
+  
 }
 #bikenight ul.flickr a:hover {
-  border-color: #ccc;
+  
 }
 #bikenight p {
-
   line-height: 130%;
 }
 #sidebar {
