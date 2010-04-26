@@ -9,10 +9,27 @@
 
 <br />
 
+<%= subtitle "Get Directions" %>
+<p>
+  We're located in downtown Clarksburg, WV. But if you're not sure exactly where,
+  get directions by typing in where you're coming from in the form below.
+</p>
+
 <% form_tag directions_location_path do %>
-  City: <%= text_field_tag :city %><br />
-  State: <%= select :location, :state, States.to_options %><br />
-  Zip: <%= text_field_tag :zip %>
+  <table class="inline">
+    <tr>
+      <td class="city">
+        <label>City</label>
+        <%= text_field_tag :city %></td>
+      <td class="state">
+        <label>State</label>
+        <%= select :location, :state, States.to_options %></td>
+      <td class="zip">
+        <label>Zip</label>
+        <%= text_field_tag :zip %></td>
+    </tr>
+  </table>
+  
   <p class="submission">
     <%= submit_tag 'Get Directions' %>
   </p>
