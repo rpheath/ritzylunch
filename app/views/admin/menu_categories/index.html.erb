@@ -1,0 +1,17 @@
+<%= title "Menu Categories" %>
+
+<% unless @menu_categories.blank? %>
+  <% list do %>
+    <% @menu_categories.each do |cat| %>
+      <li class="<%= cycle 'odd', nil %>">
+        <span class="options">
+          <%= link_to 'Edit', edit_admin_menu_category_path(cat) %>
+          | <%= link_to 'Delete', admin_menu_category_path(cat), :method => :delete %>
+        </span>
+        <%= cat.name %>
+      </li>
+    <% end %>
+  <% end %>
+<% else %>
+  <p>Sorry, there aren't any menu categories to list yet.</p>
+<% end %>

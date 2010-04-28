@@ -1,0 +1,8 @@
+<%= title "Edit Menu Category" %>
+
+<% form_assistant_for [:admin, @menu_category] do |form| %>
+  <%= form.partial 'form' %>
+  <p class="submission">
+    <%= form.submit 'Update Category' %>
+  </p>
+<% end %>

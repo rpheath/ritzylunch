@@ -6,10 +6,11 @@ module RPH
     
     module ControllerMethods
       def restful_controller(options = {})
-        class_inheritable_accessor :model, :support_pagination
+        class_inheritable_accessor :model, :support_pagination, :redirect_back_to
         
         self.model = options[:model] || controller_name.sub(/Controller$/, '').classify.constantize
         self.support_pagination = !!(options[:pagination])
+        self.redirect_back_to = options[:redirect_to]
         
         include Controller::Actions
       end
@@ -78,7 +79,11 @@ module RPH
         end
         
         def handle_redirect!
-          redirect_to (params[:continue] ? request.referrer : send("#{resource_name.pluralize}_path"))
+          if self.redirect_back_to.blank?
+            redirect_to (params[:continue] ? request.referrer : send("#{resource_name.pluralize}_path"))
+          else
+            redirect_to send(self.redirect_back_to)
+          end
         end
         
         def set_resource_to(value)

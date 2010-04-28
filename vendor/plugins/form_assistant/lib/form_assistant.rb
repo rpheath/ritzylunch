@@ -9,7 +9,7 @@ module RPH
     FORM_HELPERS = [
       ActionView::Helpers::FormBuilder.field_helpers + 
       %w(date_select datetime_select time_select collection_select select country_select time_zone_select) - 
-      %w(hidden_field label fields_for)
+      %w(hidden_field label fields_for lookup_for)
     ].flatten.freeze
         
     # FormAssistant::FormBuilder

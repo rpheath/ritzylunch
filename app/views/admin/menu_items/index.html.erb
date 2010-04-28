@@ -1,0 +1,17 @@
+<%= title "Menu Items" %>
+
+<% unless @menu_items.blank? %>
+  <% list do %>
+    <% @menu_items.each do |item| %>
+      <li class="<%= cycle 'odd', nil %>">
+        <span class="options">
+          <%= link_to 'Edit', edit_admin_menu_item_path(item) %>
+          | <%= link_to 'Delete', admin_menu_item_path(item), :method => :delete %>
+        </span>
+        <%= item.name %>
+      </li>
+    <% end %>
+  <% end %>
+<% else %>
+  <p>Sorry, there aren't any menu items to list yet.</p>
+<% end %>
