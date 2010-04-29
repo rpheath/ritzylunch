@@ -1,5 +1,8 @@
 <%= title "Menu Categories" %>
 
+<%= link_to 'Reorder Categories', sortable_admin_menu_categories_path %>
+| <%= link_to 'New', new_admin_menu_category_path %>
+
 <% unless @menu_categories.blank? %>
   <% list do %>
     <% @menu_categories.each do |cat| %>
@@ -7,6 +10,7 @@
         <span class="options">
           <%= link_to 'Edit', edit_admin_menu_category_path(cat) %>
           | <%= link_to 'Delete', admin_menu_category_path(cat), :method => :delete %>
+          | <%= link_to 'Reorder Items', sortable_admin_menu_items_path(:category => cat.id) %>
         </span>
         <%= cat.name %>
       </li>

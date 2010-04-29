@@ -293,15 +293,56 @@ p.submission {
   padding-top: 5px;
   margin-top: 10px;
 }
+span.options {
+  float: right;
+}
+span.handle {
+  float: right;
+  background: #ddd;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 0.9em;
+  cursor: move;
+}
+ul.sortable li {
+  margin-bottom: 5px;
+}
 #menu {
   background: url(../images/menu-bg.png) no-repeat -23px top;
   padding: 20px 18px 0 20px;
 }
 #menu .body {
-  height: 500px;
-  background: #fdfbed;
   border: 1px solid #f7f4dd;
-  padding: 20px;
+  padding: 10px;
+}
+#menu span,
+#menu .body {
+  background: #fdfbed;
+}
+#menu span {
+  padding-right: 3px;
+}
+#menu span.price {
+  float: right;
+  padding: 0 0 0 3px;
+}
+#menu ul {
+  margin: 0 0 15px 10px;
+}
+#menu li {
+  line-height: 140%;
+  font-size: 13px;
+  background: url(../images/menu-dot.png) repeat-x left 10px;
+}
+#menu h2 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #222;
+  margin: 0 0 5px 0;
+  padding: 4px;
+  text-shadow: 1px 1px 1px #fff;
+  letter-spacing: 1px;
+  background: #f7f4dd;
 }
 #ftr {
   background: #F3F0E9;

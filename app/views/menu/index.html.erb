@@ -2,6 +2,20 @@
 
 <div id="menu">
   <div class="body">
-    
+    <% unless @menu_categories.blank? %>
+      <% @menu_categories.each do |category| %>
+        <h2 class="rounded"><%= category.name %></h2>
+        <% list do %>
+          <% category.menu_items.each do |item| %>
+            <li>
+              <span class="price"><%= number_to_currency item.price %></span>
+              <span><%= item.name %></span>
+            </li>
+          <% end %>
+        <% end %>
+      <% end %>
+    <% else %>
+      <p>Sorry, we haven't updated our online menu yet!</p>
+    <% end %>
   </div>
 </div>

@@ -1,4 +1,6 @@
 $(function() {
+  $('form:first *:input:text[type!=hidden]:first').focus()
+  
   $('a[rel=facebox]').facebox()
   
   $('a[rel=external]').click(function(e) {

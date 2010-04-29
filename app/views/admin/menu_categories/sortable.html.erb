@@ -1,0 +1,25 @@
+<%= title "Reorder Menu Categories" %>
+
+<% unless @menu_categories.blank? %>
+  <% form_tag reorder_admin_menu_categories_path do %>
+    <% list :class => 'sortable' do %>
+      <% @menu_categories.each do |cat| %>
+        <li id="<%= cat.id %>" class="<%= cycle 'odd', nil %>">
+          <span class="handle rounded">DRAG</span>
+          <%= cat.name %>
+          <div class="clearfix"></div>
+        </li>
+      <% end %>
+    <% end %>
+    
+    <%= hidden_field_tag 'item_ids[]' %>
+    
+    <p class="submission">
+      <%= submit_tag "Reorder Menu Categories" %>
+    </p>
+  <% end %>
+<% else %>
+  <p>Sorry, there aren't any menu categories to sort.</p>
+<% end %>
+
+<%= js_for_sortable_list %>
