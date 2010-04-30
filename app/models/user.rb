@@ -3,6 +3,8 @@ require 'digest/sha1'
 class User < ActiveRecord::Base
   attr_accessor :password, :password_confirmation
   
+  acts_as_lookup [:first_name, :last_name], :default_text => :first
+  
   validates_confirmation_of :password
   validates_presence_of :first_name, :last_name, :username, :password, :password_confirmation
   
@@ -28,5 +30,9 @@ protected
 public  
   def try_to_login!
     self.class.login(self.username, self.password) or raise "Oooooooops! You've entered invalid credentials."
+  end
+  
+  def name
+    [self.first_name, self.last_name].compact.join(' ')
   end
 end

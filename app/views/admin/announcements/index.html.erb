@@ -1,0 +1,17 @@
+<%= title "Announcements" %>
+
+<% unless @announcements.blank? %>
+  <% list do %>
+    <% @announcements.each do |announcement| %>
+      <li class="<%= cycle 'odd', nil %>">
+        <span class="options">
+          <%= link_to 'Edit', edit_admin_announcement_path(announcement) %>
+          | <%= link_to 'Delete', admin_announcement_path(announcement), :method => :delete %>
+        </span>
+        <%= link_to announcement.title, admin_announcement_path(announcement) %>
+      </li>
+    <% end %>
+  <% end %>
+<% else %>
+  <p>Sorry, there aren't any announcements to list just yet.</p>
+<% end %>

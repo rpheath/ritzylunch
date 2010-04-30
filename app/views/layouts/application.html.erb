@@ -48,7 +48,18 @@
 	          </div>
 	          
 	          <h3>Recent Announcements</h3>
-	          <p class="soft">Sorry, there aren't any announcements to list just yet.</p>
+	          <% unless @sidebar_announcements.blank? %>
+  	          <% list do %>
+  	            <% @sidebar_announcements.each do |a| %>
+	                <li>
+	                  <span><%= a.created_at.strftime("%b %d, %Y") %></span>
+	                  <p class="soft"><%= link_to a.title, a %></p>
+	                </li>
+  	            <% end %>
+  	          <% end %>
+	          <% else %>
+	            <p class="soft">Sorry, there aren't any announcements to list just yet.</p>
+	          <% end %>
 	          
 	          <h3>Contact Us</h3>
 	          <p class="soft">

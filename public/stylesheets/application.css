@@ -112,6 +112,12 @@ body, html {
   float: left;
   width: 515px;
 }
+#main h2 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
 #map {
   height: 300px;
   border: 3px solid #999;
@@ -209,7 +215,7 @@ div.divider {
 }
 #sidebar .body {
   width: 250px;
-  padding: 5px 20px 20px 20px;
+  padding: 5px 20px 30px 20px;
   margin-right: -45px;
   background: #eee;
   border: 5px solid #ddd;
@@ -242,7 +248,8 @@ div.divider {
   font-size: 13px;
   font-family: helvetica, arial;
 }
-#sidebar p.soft {
+#sidebar p.soft,
+p.soft {
   font-size: 14px;
   font-family: helvetica, arial;
   color: #666;
@@ -255,6 +262,25 @@ div.divider {
   padding: 10px 0 4px 0;
   text-shadow: 1px 1px 1px #fff;
   color: #222;
+}
+#sidebar ul.list {
+  margin: 7px 0 0 5px;
+}
+#sidebar ul.list li {
+  padding-left: 23px;
+  background: url(../images/page.png) no-repeat left 2px;
+}
+#sidebar ul.list span {
+  font-family: georgia, times;
+  color: #777;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 1px;
+  display: block;
+  padding-bottom: 4px;
+}
+#sidebar ul.list p {
+  font-size: 14px;
 }
 label {
   display: block;

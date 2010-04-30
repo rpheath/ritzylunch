@@ -1,11 +1,3 @@
 class Admin::UsersController < Admin::AuthorizedController
-  def index
-  end
-
-  def new
-  end
-
-  def edit
-  end
-
+  restful_controller :redirect_to => :admin_users_path
 end

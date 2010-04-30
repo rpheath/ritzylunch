@@ -7,8 +7,8 @@ ActionController::Routing::Routes.draw do |map|
   map.location '/location', :controller => 'location'
   
   map.resources :location, :only => [:index], :collection => { :directions => :any }
-  
   map.resources :testimonials, :only => [:index]
+  map.resources :announcements, :only => [:index, :show]
   
   map.namespace :admin do |admin|
     admin.resources :base, :only => [:index]
@@ -19,6 +19,7 @@ ActionController::Routing::Routes.draw do |map|
       :collection => { :sortable => :get, :reorder => :post }
     admin.resources :menu_items, :as => 'menu/items',
       :collection => { :sortable => :get, :reorder => :post }
+    admin.resources :announcements
   end
   
   map.resource :session

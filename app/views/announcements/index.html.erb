@@ -1,0 +1,13 @@
+<%= title "Announcements" %>
+
+<% unless @announcements.blank? %>
+  <% list do %>
+    <% @announcements.each do |announcement| %>
+      <li class="<%= cycle 'odd', nil %>">
+        <%= link_to announcement.title, announcement %>
+      </li>
+    <% end %>
+  <% end %>
+<% else %>
+  <p>Sorry, there aren't any announcements to list just yet.</p>
+<% end %>

@@ -1,0 +1,8 @@
+<%= title "Edit Announcement" %>
+
+<% form_assistant_for [:admin, @announcement] do |form| %>
+  <%= form.partial 'form' %>
+  <p class="submission">
+    <%= form.submit "Update Announcement" %>
+  </p>
+<% end %>

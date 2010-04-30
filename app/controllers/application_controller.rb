@@ -1,12 +1,19 @@
 class ApplicationController < ActionController::Base
   helper :all
+  helper_method :current_user
   helper_method :logged_in?
   
   protect_from_forgery
 
   filter_parameter_logging :password
   
+  before_filter :load_announcements
+  
 protected
+  def load_announcements
+    @sidebar_announcements = Announcement.all(:order => "id DESC", :limit => 3)
+  end
+  
   def logged_in?
     !!current_user
   end
