@@ -1,3 +1,3 @@
 class Admin::TestimonialsController < Admin::AuthorizedController
-  restful_controller :pagination => true
+  restful_controller :redirect_to => :admin_testimonials_path
 end

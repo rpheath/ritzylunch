@@ -1,7 +1,12 @@
 <%= title "What People Are Saying" %>
 
 <% unless @testimonials.blank? %>
-  
+  <% @testimonials.each do |testimonial| %>
+    <div class="testimonial">
+      <%= testimonial.body_html %>
+      <p class="soft tright">Testimonial by <%= testimonial.from %></p>
+    </div>
+  <% end %>
 <% else %>
   <p>
     Sorry, we haven't had a chance to fill in all the great things people are saying

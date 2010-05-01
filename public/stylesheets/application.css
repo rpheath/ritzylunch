@@ -282,6 +282,12 @@ p.soft {
 #sidebar ul.list p {
   font-size: 14px;
 }
+div.testimonial {
+  padding: 0 0 10px 40px;
+  margin-bottom: 15px;
+  border-bottom: 5px solid #999;
+  background: url(../images/quote.jpg) no-repeat left top;
+}
 label {
   display: block;
   color: #777;
