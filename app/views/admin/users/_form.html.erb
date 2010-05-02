@@ -4,5 +4,5 @@
 <% unless @user.new_record? %>
   <p class="note">(Leave password blank to keep your current password)</p>
 <% end %>
-<%= form.text_field :password %>
-<%= form.text_field :password_confirmation %>
+<%= form.password_field :password %>
+<%= form.password_field :password_confirmation %>
