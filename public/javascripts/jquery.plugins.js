@@ -11,8 +11,8 @@
   $.fn.flickrPhotos = function(options) {
     var settings = $.extend({
       limit: 10,
-      user_id: '95448703@N00', // '49421777@N07'
-      tags: 'rpheath'          // 'bikenight'
+      user_id: '49421777@N07',
+      tags: 'ritzy'
     }, options || {})
     
     return $(this).jflickrfeed({
