@@ -1,7 +1,7 @@
 class About < ActiveRecord::Base
   include Textilizer
   
-  validates_presence_of :page_title, :body
+  validates_presence_of :page_title, :content
   
   textilize :content
   
