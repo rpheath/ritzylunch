@@ -1,0 +1,15 @@
+#hdr ul.navigation li {
+  padding-bottom: 10px;
+}
+td.zip input {
+  width: 80% !important;
+}
+#sidebar .body {
+  width: 255px;
+}
+#sidebar .top {
+  width: 300px;
+}
+body {
+  padding-bottom: 10px;
+}

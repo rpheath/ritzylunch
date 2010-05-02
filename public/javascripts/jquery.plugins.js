@@ -41,7 +41,7 @@
           target: 'topMiddle' 
         },
         adjust: {
-          y: -62
+          y: ($.browser.msie && $.browser.version == 7 ? 0 : -62)
         }
       }
     })

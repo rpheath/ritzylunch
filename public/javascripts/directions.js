@@ -9,8 +9,8 @@ $(function() {
     var blueIcon = new GIcon(G_DEFAULT_ICON)
     blueIcon.image = "http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png"
     
-    directionsPanel = document.getElementById("directions")
-    directions = new GDirections(map, directionsPanel)
+    var directionsPanel = document.getElementById("directions")
+    var directions = new GDirections(map, directionsPanel)
     directions.load($('input#map_directions').val())
   }
   
