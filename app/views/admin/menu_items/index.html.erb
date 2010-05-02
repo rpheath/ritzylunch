@@ -1,6 +1,12 @@
 <%= title "Menu Items" %>
 
-<%= link_to 'New', new_admin_menu_item_path %>
+<span class="right admin">
+  <%= link_to 'Add New', new_admin_menu_item_path %>
+</span>
+
+<div class="clearfix"></div>
+
+<br />
 
 <% unless @menu_items.blank? %>
   <% list do %>

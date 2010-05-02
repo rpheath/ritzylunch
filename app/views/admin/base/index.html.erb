@@ -1,10 +1,63 @@
 <%= title "Administrative Options" %>
 
-<ul>
-  <li><%= link_to 'Manage Users', admin_users_path %></li>
-  <li><%= link_to 'Update About Ritzy Lunch Content', edit_admin_about_path(About.only) %></li>
-  <li><%= link_to 'Testimonials', admin_testimonials_path %></li>
-  <li><%= link_to 'Menu Categories', admin_menu_categories_path %></li>
-  <li><%= link_to 'Menu Items', admin_menu_items_path %></li>
-  <li><%= link_to 'Announcements', admin_announcements_path %></li>
+<ul class="admin soft">
+  <li>
+    <%= link_to 'Manage Users', admin_users_path %>
+    | <%= link_to 'New', new_admin_user_path %>
+    <p class="soft">
+      This area will let you add, edit, and delete users. Any user
+      has the ability to login and edit site content.
+    </p>
+  </li>
+  <li>
+    <%= link_to 'Update About Ritzy Lunch Content', edit_admin_about_path(About.only) %>
+    <p class="soft">
+      This refers to the content in the "About" section.
+    </p>
+  </li>
+  <li>
+    <%= link_to 'Testimonials', admin_testimonials_path %>
+    | <%= link_to 'New', new_admin_testimonial_path %>
+    <p class="soft">
+      Testimonials are great for listing positive reviews of Ritzy Lunch. Here
+      is where you can manage those testimonials.
+    </p>
+  </li>
+  <li>
+    <%= link_to 'Menu Categories', admin_menu_categories_path %>
+    | <%= link_to 'New', new_admin_menu_category_path %>
+    <p class="soft">
+      Menu categories are used to group the menu items together. For example,
+      "Breakfast" and "Lunch" are good menu categories. This is where you
+      can manage those categories.
+    </p>
+  </li>
+  <li>
+    <%= link_to 'Menu Items', admin_menu_items_path %>
+    | <%= link_to 'New', new_admin_menu_item_path %>
+    <p class="soft">
+      Menu items are the actual items on the menu. Each item has a name and a
+      price. This is where you can manage those items.
+    </p>
+  </li>
+  <li>
+    <%= link_to 'Announcements', admin_announcements_path %>
+    | <%= link_to 'New', new_admin_announcement_path %>
+    <p class="soft">
+      Announcements are used to let visitors know of any Ritzy-related news. For
+      example, if there is a special event taking place at an upcoming Bike Night,
+      you could announce that here.
+    </p>
+  </li>
 </ul>
+
+<div class="divider"></div>
+
+<p class="soft">
+  <u>Note</u>: All photos are managed on the Ritzy Lunch Flickr account. In order to show
+  photos under the Bike Night section, on Flickr, tag a photo with "<strong>bikenight</strong>"; 
+  Similarly, in order to show more About/Historical photos, on Flickr, tag a photo with 
+  "<strong>about</strong>". Once tagged properly, the website will automatically pull in the 
+  photos from Flickr onto this site. If you don't want a photo to show anymore, simply remove 
+  it's corresponding tag.
+</p>

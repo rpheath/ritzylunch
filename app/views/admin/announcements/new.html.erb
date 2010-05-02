@@ -1,5 +1,13 @@
 <%= title "New Announcement" %>
 
+<span class="right admin">
+  <%= link_to 'All Announcements', admin_announcements_path %>
+</span>
+
+<div class="clearfix"></div>
+
+<br />
+
 <% form_assistant_for [:admin, @announcement] do |form| %>
   <%= form.partial 'form' %>
   <p class="submission">

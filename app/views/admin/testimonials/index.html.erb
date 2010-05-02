@@ -1,2 +1,23 @@
-<h1>Admin::Testimonials#index</h1>
-<p>Find me in app/views/admin/testimonials/index.html.erb</p>
+<%= title "Manage Testimonials" %>
+
+<span class="right admin">
+  <%= link_to 'Add New', new_admin_testimonial_path %>
+</span>
+
+<div class="clearfix"></div>
+
+<br />
+
+<% unless @testimonials.blank? %>
+  <% list do %>
+    <% @testimonials.each do |t| %>
+      <span class="options">
+        <%= link_to 'Edit', edit_admin_testimonial_path(t) %>
+        | <%= link_to 'Delete', admin_testimonial_path(t), :method => :delete %>
+      </span>
+      By <%= t.from %>
+    <% end %>
+  <% end %>
+<% else %>
+  <p>There aren't any testimonials to list just yet.</p>
+<% end %>

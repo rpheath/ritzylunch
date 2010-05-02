@@ -1,6 +1,12 @@
-<%= form.lookup_for :menu_category_id, :template => 'select' %>
+<label>Choose Category</label>
+<p><%= form.lookup_for :menu_category_id, :template => 'select' %></p>
 
-<br /><br />
-
-<%= form.text_field :name %>
-<%= form.text_field :price %>
+<table width="100%">
+  <tr>
+    <td width="80%">
+      <p class="right soft" style="padding:25px 5px 0 0;font-size:19px">$</p>
+      <%= form.text_field :name %>
+    </td>
+    <td width="20%"><%= form.text_field :price %></td>
+  </tr>
+</table>

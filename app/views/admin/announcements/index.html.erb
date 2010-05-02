@@ -1,5 +1,13 @@
 <%= title "Announcements" %>
 
+<span class="right admin">
+  <%= link_to 'Add New', new_admin_announcement_path %>
+</span>
+
+<div class="clearfix"></div>
+
+<br />
+
 <% unless @announcements.blank? %>
   <% list do %>
     <% @announcements.each do |announcement| %>

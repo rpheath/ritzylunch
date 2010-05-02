@@ -1,5 +1,14 @@
 <%= title "Edit Menu Category" %>
 
+<span class="right admin">
+  <%= link_to 'All Categories', admin_menu_categories_path %>
+  | <%= link_to 'New Category', new_admin_menu_category_path %>
+</span>
+
+<div class="clearfix"></div>
+
+<br />
+
 <% form_assistant_for [:admin, @menu_category] do |form| %>
   <%= form.partial 'form' %>
   <p class="submission">

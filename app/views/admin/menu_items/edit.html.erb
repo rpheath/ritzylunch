@@ -1,5 +1,14 @@
 <%= title "New Menu Item" %>
 
+<span class="right admin">
+  <%= link_to 'All Items', admin_menu_items_path %>
+  | <%= link_to 'Add New', new_admin_menu_item_path %>
+</span>
+
+<div class="clearfix"></div>
+
+<br />
+
 <% form_assistant_for [:admin, @menu_item] do |form| %>
   <%= form.partial 'form' %>
   <p class="submission">

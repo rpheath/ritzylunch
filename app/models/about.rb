@@ -1,6 +1,8 @@
 class About < ActiveRecord::Base
   include Textilizer
   
+  validates_presence_of :page_title, :body
+  
   textilize :content
   
   def self.only

@@ -1,2 +1,23 @@
-<h1>Admin::Users#index</h1>
-<p>Find me in app/views/admin/users/index.html.erb</p>
+<%= title "Manage Users" %>
+
+<span class="right admin">
+  <%= link_to 'Add User', new_admin_user_path %>
+</span>
+
+<p class="soft">Logged in as <%= current_user.name %></p>
+
+<% unless @users.blank? %>
+  <% list do %>
+    <% @users.each do |u| %>
+      <li class="<%= cycle 'odd', nil %>">
+        <span class="options">
+          <%= link_to 'Edit', edit_admin_user_path(u) %>
+          | <%= link_to_unless u == current_user, 'Delete', admin_user_path(u), :method => :delete %>
+        </span>
+        <%= u.name %>
+      </li>
+    <% end %>
+  <% end %>
+<% else %>
+  <p>There aren't any other users in the system.</p>
+<% end %>

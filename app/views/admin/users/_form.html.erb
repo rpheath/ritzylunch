@@ -1,0 +1,8 @@
+<%= form.text_field :first_name %>
+<%= form.text_field :last_name %>
+<%= form.text_field :username %>
+<% unless @user.new_record? %>
+  <p class="note">(Leave password blank to keep your current password)</p>
+<% end %>
+<%= form.text_field :password %>
+<%= form.text_field :password_confirmation %>

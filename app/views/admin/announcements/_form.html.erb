@@ -1,5 +1,5 @@
 <%= form.text_field :title %>
-<label>Who is Posting this?</label>
+<label>By who?</label>
 <% if @announcement.new_record? %>
   <p><%= form.lookup_for :user_id, :selected => current_user.id %></p>
 <% else %>

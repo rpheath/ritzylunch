@@ -1,2 +1,14 @@
-<h1>Admin::Users#new</h1>
-<p>Find me in app/views/admin/users/new.html.erb</p>
+<%= title "New User" %>
+
+<span class="right admin">
+  <%= link_to 'All Users', admin_users_path %>
+</span>
+
+<div class="clearfix"></div>
+
+<% form_assistant_for [:admin, @user] do |form| %>
+  <%= form.partial 'form' %>
+  <p class="submission">
+    <%= form.submit "Create User" %>
+  </p>
+<% end %>
