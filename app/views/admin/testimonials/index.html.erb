@@ -11,11 +11,13 @@
 <% unless @testimonials.blank? %>
   <% list do %>
     <% @testimonials.each do |t| %>
-      <span class="options">
-        <%= link_to 'Edit', edit_admin_testimonial_path(t) %>
-        | <%= link_to 'Delete', admin_testimonial_path(t), :method => :delete %>
-      </span>
-      By <%= t.from %>
+      <li class="<%= cycle 'odd', nil %>">
+        <span class="options">
+          <%= link_to 'Edit', edit_admin_testimonial_path(t) %>
+          | <%= link_to 'Delete', admin_testimonial_path(t), :method => :delete %>
+        </span>
+        By <%= t.from %>
+      </li>
     <% end %>
   <% end %>
 <% else %>
