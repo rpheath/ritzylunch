@@ -10,7 +10,7 @@ $(function() {
   
   $('#sidebar .body').setHeight()
   
-  $('ul.bikenight').flickrPhotos({ tags: 'about' })
+  $('ul.bikenight').flickrPhotos({ tags: 'bikenight' })
   $('ul.history').flickrPhotos({ tags: 'about' })
 	
   setTimeout(function() { $('p.notice, p.warning, p.error').fadeOut(1500); }, 15000)
