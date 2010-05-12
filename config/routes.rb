@@ -5,6 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   map.menu '/menu', :controller => 'menu'
   map.about '/about', :controller => 'about'
   map.location '/location', :controller => 'location'
+  map.press '/press', :controller => 'press'
   
   map.resources :location, :only => [:index], :collection => { :directions => :any }
   map.resources :testimonials, :only => [:index]

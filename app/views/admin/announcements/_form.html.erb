@@ -5,4 +5,5 @@
 <% else %>
   <p><%= form.lookup_for :user_id %></p>
 <% end %>
+<%= form.date_select :date, :order => [:month, :day, :year], :label => "Announcement Date" %>
 <%= form.text_area :body %>

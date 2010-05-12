@@ -28,7 +28,7 @@ body, html {
 }
 #hdr ul.navigation a:link,
 #hdr ul.navigation a:visited {
-  font-size: 14px;
+  font-size: 15px;
   padding: 8px;
   color: #777;
   text-decoration: none;
@@ -61,19 +61,23 @@ body, html {
 }
 #hdr #testimonial p {
   color: #888;
-  font-size: 13px;
+  font-size: 23px;
   line-height: 125%;
   letter-spacing: 1px;
+  font-style: italic;
 }
 #hdr #testimonial span {
   display: block;
-  padding-top: 7px;
+  padding-top: 2px;
   font-family: helvetica;
+  font-size: 13px;
+  color: #888;
+  font-style: normal;
 }
 #hdr #testimonial p a:link,
 #hdr #testimonial p a:visited {
-  color: #888;
-  font-size: 11px;
+  color: #777;
+  font-size: 13px;
   font-style: normal;
 }
 #hdr #testimonial p a:hover {
@@ -243,7 +247,7 @@ div.divider {
   text-align: center;
   background: url(../images/polaroid-bg.png) no-repeat center top;
   margin: 0 -15px;
-  height: 284px;
+  height: 274px;
   padding-top: 17px;
 }
 #sidebar .polaroid p {
@@ -257,6 +261,24 @@ p.soft {
   font-size: 14px;
   font-family: helvetica, arial;
   color: #666;
+}
+.links,
+.documents {
+  background: #f6f6f6;
+  padding: 15px;
+  border: 1px solid #e9e9e9;
+}
+.links li,
+.documents li {
+  padding: 10px 0 10px 45px;
+  line-height: 165%;
+}
+.links li {
+  background: url(../images/link.png) no-repeat 4px center;
+}
+.documents li.pdf {
+  padding: 18px 0 18px 65px;
+  background: url(../images/pdf.png) no-repeat -7px center;
 }
 ul.soft {
   color: #666;
@@ -314,6 +336,25 @@ li.odd {
 }
 #sidebar ul.list p {
   font-size: 14px;
+}
+.hours {
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+.hours p {
+  font-family: helvetica;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+#sidebar .hours p.soft {
+  font-size: 11px;
+  padding-top: 10px;
+}
+.hours strong {
+  width: 125px;
+  display: inline-block;
 }
 div.testimonial {
   padding: 0 0 10px 40px;
@@ -474,4 +515,12 @@ ul.sortable li {
   padding: 2px 5px 2px 5px;
   margin: 2px;
   color: #999;
+}
+div.attn {
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 15px;
 }

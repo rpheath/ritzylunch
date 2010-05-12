@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100430022101) do
+ActiveRecord::Schema.define(:version => 20100512004438) do
 
   create_table "abouts", :force => true do |t|
     t.string   "page_title"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20100430022101) do
     t.text     "body_html"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "date"
   end
 
   create_table "menu_categories", :force => true do |t|

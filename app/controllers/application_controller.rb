@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   
 protected
   def load_announcements
-    @sidebar_announcements = Announcement.all(:order => "id DESC", :limit => 3)
+    @sidebar_announcements = Announcement.all(:order => "date DESC", :limit => 3)
   end
   
   def logged_in?

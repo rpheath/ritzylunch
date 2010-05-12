@@ -2,8 +2,8 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-		<title><%= @page_title || 'The Ritzy Lunch' %></title>
-    <meta name="keywords" content="ritzy lunch, the ritzy, ritzy, hotdogs, antonio selario, clarksburg, west virginia, wv" />
+		<title><%= @page_title || 'Ritzy Lunch' %></title>
+    <meta name="keywords" content="ritzy lunch, clarksburg, the ritzy, ritzy, hotdogs, antonio selario, west virginia, wv" />
     <meta name="description" content="The Ritzy Lunch" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<%= stylesheet_link_tag 'base', 'facebox', 'flash', 'application' -%>
@@ -24,9 +24,8 @@
 	    
 	    <div id="testimonial" class="tright">
 	      <p>
-	        "The best chili dogs in the business! The Ritzy definitely gets two
-	        thumbs up from me."
-	        <span><%= link_to 'More Testimonials &#187;', testimonials_path %></span>
+	        The best darn hot dogs around!
+	        <span><%= link_to 'Testimonials', testimonials_path %> | <%= link_to 'Press', press_path %></span>
 	      </p>
 	    </div>
 	  </div>
@@ -47,12 +46,22 @@
 	            <p>The Ritzy Lunch &#8212; Clarksburg, WV</p>
 	          </div>
 	          
+	          <div class="hours rounded">
+	            <p><strong>Monday - Friday</strong> 5am - 5pm</p>
+	            <p><strong>Saturday</strong> 7am - 2pm</p>
+	            <p><strong>Bike Night</strong> 5am - 9pm</p>
+	            <p class="soft small">
+	              Note: Thursday Bike Night's are only during the summer
+	              and are weather-permitting.
+	            </p>
+	          </div>
+	          
 	          <h3>Recent Announcements</h3>
 	          <% unless @sidebar_announcements.blank? %>
   	          <% list do %>
   	            <% @sidebar_announcements.each do |a| %>
 	                <li>
-	                  <span><%= a.created_at.strftime("%b %d, %Y") %></span>
+	                  <span><%= a.date.strftime("%b %d, %Y") %></span>
 	                  <p class="soft"><%= link_to a.title, a %></p>
 	                </li>
   	            <% end %>
@@ -87,5 +96,7 @@
 	    <p class="right">Antonio B. Selario, Owner<br />Phone (304) 622-3600</p>
 	    <div class="clearfix"></div>
 	  </div>
+	  
+	  <%= render 'shared/analytics' %>
 	</body>	
 </html>

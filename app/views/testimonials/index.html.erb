@@ -7,9 +7,11 @@
       <p class="soft tright">Testimonial by <%= testimonial.from %></p>
     </div>
   <% end %>
+  <br />
+  <%= render 'submit_testimonial' %>
 <% else %>
   <p>
     Sorry, we haven't had a chance to fill in all the great things people are saying
-    about us. Please check back soon!
+    about us. Please check back soon! <%= link_to 'Submit one!', 'mailto:ritzylunchwv@gmail.com?Subject=Ritzy: New Testimonial' %>
   </p>
 <% end %>

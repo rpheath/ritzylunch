@@ -2,7 +2,7 @@
 
 <h2><%= @announcement.title %></h2>
 <p class="soft">
-  Posted on <%= @announcement.created_at.strftime("%B %d, %Y") %>
+  <%= @announcement.date.strftime("%B %d, %Y") %>
   by <%= @announcement.user.name %>
 </p>
 

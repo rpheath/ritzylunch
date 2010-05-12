@@ -1,0 +1,25 @@
+<%= title "Ritzy Lunch in the Press!" %>
+
+<p>
+  Over the years, Ritzy Lunch has made its way into newspapers, magazines, online articles, and so on.
+  We do our best to keep track of it all and present it here on our site. Take a look!
+</p>
+
+<div class="links rounded">
+  <%= subtitle "Internet Links" %>
+  <ul>
+    <li><%= link_to 'New York Times: Fast Food Even Before Fast Food', 'http://www.nytimes.com/2009/09/30/dining/30unit.html?_r=1', :rel => 'external' %></li>
+  </ul>
+</div>
+
+<br />
+
+<div class="documents rounded">
+  <%= subtitle "Documents" %>
+  <ul>
+    <li class="pdf"><%= document_link('best_hot_dogs.pdf') %></li>
+    <li class="pdf"><%= document_link('bonappetite_recipe_request.pdf') %></li>
+    <li class="pdf"><%= document_link('magazine_cover.pdf') %></li>
+    <li class="pdf"><%= document_link('put_on_the_ritz.pdf') %></li>
+  </ul>
+</div>
