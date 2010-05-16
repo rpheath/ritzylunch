@@ -1,7 +1,4 @@
 development: # ritzylunch.local
   api_key: ABQIAAAAu7h2qzhjNgZHWvY17SwGDRSX78-u-9Lw1ZXjId7Kdzejnrgc5xQjGqpp0XKjUS33Y2ny6r2caaBirA
-production: # ritzylunch.heroku.com
-  api_key: ABQIAAAAu7h2qzhjNgZHWvY17SwGDRSNutOsDoUhZsMzxagnt4EgoUDXWxTWpMdcZm5S1wiWBF2-NxZHAfOjjQ
-  
-# ritzylunchwv.com
-# ABQIAAAAu7h2qzhjNgZHWvY17SwGDRS-2gFxHVtZid6joR1f-CN6rFnS2xQyiE1Qnx3tRUHvf83WoHVVo6hPTw
+production: # ritzylunchwv.com
+  api_key: ABQIAAAAu7h2qzhjNgZHWvY17SwGDRS-2gFxHVtZid6joR1f-CN6rFnS2xQyiE1Qnx3tRUHvf83WoHVVo6hPTw
