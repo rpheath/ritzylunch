@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
 protected
   def ensure_domain
     if Rails.env.production? && request.env['HTTP_HOST'] != PRIMARY_HOSTNAME
-      redirect_to URI.join("http://www.#{PRIMARY_HOSTNAME}", request.env['PATH_INFO'] || '/').to_s
+      redirect_to URI.join("http://#{PRIMARY_HOSTNAME}", request.env['PATH_INFO'] || '/').to_s
     end
   end
 
