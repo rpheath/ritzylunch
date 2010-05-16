@@ -8,8 +8,17 @@ class ApplicationController < ActionController::Base
   filter_parameter_logging :password
   
   before_filter :load_announcements
+  before_filter :ensure_domain
+  
+  PRIMARY_HOSTNAME = 'ritzylunchwv.com'
   
 protected
+  def ensure_domain
+    if Rails.env.production? && request.env['HTTP_HOST'] != PRIMARY_HOSTNAME
+      redirect_to URI.join("http://#{PRIMARY_HOSTNAME}", request.env['PATH_INFO'] || '/').to_s
+    end
+  end
+
   def load_announcements
     @sidebar_announcements = Announcement.all(:order => "date DESC", :limit => 3)
   end

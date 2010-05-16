@@ -3,7 +3,7 @@
 <div class="intro">
   <p>
     The Ritzy Lunch is a family-owned business and has been going strong
-    for the past 75 years. We take pride in our dogs, and have since 1933.
+    for the past <%= Time.now.year - 1933 %> years. We take pride in our dogs, and have since 1933.
     When we spice up our chili, we know how to do it right!
   </p>
 </div>
@@ -20,13 +20,20 @@
   <%= subtitle "Thursday Bike Night" %>
   
   <p>
-    Thursday nights are Bike Night at the Ritzy. People from all over bring their
-    bikes to show off. We play games and give away prizes. It's a great time.
+    Weather permitting, every Thursday evening during the spring and summer the 
+    Ritzy stays open until 9:00 PM and motorcyclists from near and far travel to 
+    Clarksburg for hot dogs, cold beer, and time with friends. Most recently, the 
+    popular game of corn hole has been added, and patrons enjoy playing on one 
+    of the three corn hole boards in the parking lot across the street. Motorcyclists 
+    have traveled as far away as California to Hot Dog Johns Bike Night to enjoy a 
+    famous hotdog and a cold beer.
+  </p>
+  <p>
     So if you're in <%= link_to 'our area', location_path %> Thursday, come out 
     to Bike Night at the Ritzy! We promise you'll have a good time.
   </p>
   
-  <p>Below are a few photos from Bike Night. Enjoy!</p>
+  <p>Below are a few photos from Bike Night (updated weekly). Enjoy!</p>
   
   <ul class="flickr bikenight"></ul>
   <div class="inline-loading">
