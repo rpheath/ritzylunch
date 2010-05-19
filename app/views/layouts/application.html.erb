@@ -25,7 +25,11 @@
 	    <div id="testimonial" class="tright">
 	      <p>
 	        The best darn hot dogs around!
-	        <span><%= link_to 'Testimonials', testimonials_path %> | <%= link_to 'Press', press_path %></span>
+	        <span>
+	          <%= link_to 'Testimonials', testimonials_path %> 
+	          | <%= link_to 'Press', press_path %>
+	          | <%= link_to 'Announcements', announcements_path %>
+	        </span>
 	      </p>
 	    </div>
 	  </div>
@@ -57,18 +61,10 @@
 	          </div>
 	          
 	          <h3>Recent Announcements</h3>
-	          <% unless @sidebar_announcements.blank? %>
-  	          <% list do %>
-  	            <% @sidebar_announcements.each do |a| %>
-	                <li>
-	                  <span><%= a.date.strftime("%b %d, %Y") %></span>
-	                  <p class="soft"><%= link_to a.title, a %></p>
-	                </li>
-  	            <% end %>
-  	          <% end %>
-	          <% else %>
-	            <p class="soft">Sorry, there aren't any announcements to list just yet.</p>
-	          <% end %>
+	          <p class="soft">
+	            To get the latest news and updates regarding Ritzy Lunch,
+	            head over to our <%= link_to 'announcements section', announcements_path %>!
+	          </p>
 	          
 	          <h3>Contact Us</h3>
 	          <p class="soft">

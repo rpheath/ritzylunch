@@ -4,7 +4,11 @@
   <% list do %>
     <% @announcements.each do |announcement| %>
       <li class="<%= cycle 'odd', nil %>">
-        <%= link_to announcement.title, announcement %>
+        <strong><%= link_to announcement.title, announcement %></strong>
+        <p class="soft" style="margin:0">
+          <%= announcement.date.strftime("%b %d, %Y") %>
+          &#8212; Posted by <%= announcement.user.name %>
+        </p>
       </li>
     <% end %>
   <% end %>
