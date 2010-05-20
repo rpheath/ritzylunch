@@ -1,6 +1,14 @@
 class Admin::MenuCategoriesController < Admin::AuthorizedController
   restful_controller :redirect_to => :admin_menu_categories_path
+
+  after_filter :clear_cache, :only => [:create, :update, :destroy, :reorder]
   
+protected
+  def clear_cache
+    FileUtils.rm(File.join(Rails.public_path, 'menu.html')) rescue nil
+  end
+
+public  
   def index
     @menu_categories = MenuCategory.positioned
   end

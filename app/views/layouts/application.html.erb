@@ -82,12 +82,7 @@
 	    <p class="left">
 	      <strong>Ritzy Lunch Hot Dogs LLC</strong><br />
 	      by <%= link_to 'Formed Function LLC', 'http://www.formedfunction.com', :rel => 'external' %> |
-	      <% if logged_in? %>
-	        <%= link_to 'Site Management', admin_base_index_path %>
-	        | <%= link_to 'Logout', logout_path %>
-	      <% else %>
-	        <%= link_to 'Site Management', new_session_path, :id => 'admin-link' %>
-	      <% end %>
+	      <%= link_to 'Site Management', admin_base_index_path %>
 	    </p>
 	    <p class="right">Antonio B. Selario, Owner<br />Phone (304) 622-3600</p>
 	    <div class="clearfix"></div>

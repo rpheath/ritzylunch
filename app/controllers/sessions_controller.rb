@@ -19,6 +19,6 @@ class SessionsController < ApplicationController
   def destroy
   	self.current_user = nil
   	notice "You've been logged out successfully"
-  	redirect_to root_path
+  	redirect_to new_session_path
   end
 end

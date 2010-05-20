@@ -1,4 +1,12 @@
 class Admin::AboutController < Admin::AuthorizedController
+  after_filter :clear_cache, :only => [:update]
+  
+protected
+  def clear_cache
+    FileUtils.rm(File.join(Rails.public_path, 'about.html')) rescue nil
+  end
+
+public
   def edit
     @about = About.only
   end

@@ -7,3 +7,10 @@ coverage
 vendor/plugins/**/.gitignore
 vendor/rails/.gitignore
 mkmf.log
+public/about.html
+public/announcements.html
+public/home.html
+public/index.html
+public/menu.html
+public/press.html
+public/testimonials.html

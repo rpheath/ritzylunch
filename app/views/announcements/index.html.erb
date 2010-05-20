@@ -1,14 +1,15 @@
 <%= title "Announcements" %>
 
 <% unless @announcements.blank? %>
-  <% list do %>
+  <% list :class => 'text' do %>
     <% @announcements.each do |announcement| %>
       <li class="<%= cycle 'odd', nil %>">
-        <strong><%= link_to announcement.title, announcement %></strong>
+        <strong class="page"><%= announcement.title %></strong>
         <p class="soft" style="margin:0">
           <%= announcement.date.strftime("%b %d, %Y") %>
           &#8212; Posted by <%= announcement.user.name %>
         </p>
+        <%= announcement.body_html %>
       </li>
     <% end %>
   <% end %>

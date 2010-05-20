@@ -309,6 +309,9 @@ li.odd {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
+ul.text p {
+  font-size: 14px;
+}
 #sidebar h3 {
   font-size: 14px;
   text-transform: uppercase;
@@ -321,10 +324,17 @@ li.odd {
 #sidebar ul.list {
   margin: 7px 0 0 5px;
 }
-#sidebar ul.list li {
+#sidebar ul.list li,
+p.page,
+strong.page {
   padding: 0;
   padding-left: 23px;
   background: url(../images/page.png) no-repeat left 2px;
+}
+strong.page {
+  padding: 1px 0 10px 23px;
+  display: inline-block;
+  font-size: 18px;
 }
 #sidebar ul.list span {
   font-family: georgia, times;
