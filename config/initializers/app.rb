@@ -1,1 +1,1 @@
-['will_paginate', 'redcloth'].each { |lib| require lib }
+#['will_paginate', 'redcloth'].each { |lib| require lib }
