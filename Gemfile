@@ -9,3 +9,4 @@ gem 'mysql'
 
 gem 'pg', :group => :production
 gem 'heroku'
+gem 'thin'

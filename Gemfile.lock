@@ -13,6 +13,8 @@ GEM
       activesupport (= 2.3.14)
     activesupport (2.3.14)
     addressable (2.3.2)
+    daemons (1.1.9)
+    eventmachine (1.0.0)
     excon (0.16.10)
     heroku (2.33.2)
       heroku-api (~> 0.3.7)
@@ -41,6 +43,10 @@ GEM
       mime-types (>= 1.16)
     rmagick (2.13.1)
     rubyzip (0.9.9)
+    thin (1.5.0)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     will_paginate (2.3.16)
 
 PLATFORMS
@@ -54,4 +60,5 @@ DEPENDENCIES
   rails (~> 2.3.14)
   rake (= 0.8.7)
   rmagick (~> 2.13.1)
+  thin
   will_paginate (~> 2.3.16)
