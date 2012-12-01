@@ -34,6 +34,7 @@ PLATFORMS
 DEPENDENCIES
   RedCloth (~> 4.2.7)
   mysql
+  pg
   postgres
   rails (~> 2.3.14)
   rake (= 0.8.7)
