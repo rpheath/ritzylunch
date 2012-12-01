@@ -8,5 +8,5 @@ gem 'will_paginate', '~> 2.3.16'
 gem 'mysql'
 
 gem 'pg', :group => :production
-gem 'heroku'
-gem 'thin'
+# gem 'heroku'
+# gem 'thin'
