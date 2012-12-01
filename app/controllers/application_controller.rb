@@ -36,9 +36,9 @@ protected
   end
   
   def login_required
-    unless logged_in?
-      error "Sorry, you must be logged in to access that area"
-      redirect_to new_session_path 
-    end
+    return true if logged_in?
+
+    error "Sorry, you must be logged in to access that area"
+    redirect_to new_session_path 
   end
 end
