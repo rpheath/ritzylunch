@@ -1,7 +1,13 @@
 <h1>You Must First Login Before Managing Content</h1>
-<% form_assistant_for User.new, :url => login_path do |form| %>
-  <%= form.text_field :username %>
-  <%= form.password_field :password %>
+<% form_for :user, :url => login_path do |form| %>
+  <p>
+    <label>Username</label>
+    <%= form.text_field :username %>
+  </p>
+  <p>
+    <label>Password</label>
+    <%= form.password_field :password %>
+  </p>
   <p class="submission">
     <%= form.submit 'Proceed...' %>
   </p>
