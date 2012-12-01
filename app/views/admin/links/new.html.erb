@@ -1,0 +1,16 @@
+<%= title "New Link" %>
+
+<span class="right admin">
+  <%= link_to 'All Links', admin_links_path %>
+</span>
+
+<div class="clearfix"></div>
+
+<br />
+
+<% form_assistant_for [:admin, @link] do |form| %>
+  <%= form.partial 'form' %>
+  <p class="submission">
+    <%= form.submit "Save Link" %>
+  </p>
+<% end %>

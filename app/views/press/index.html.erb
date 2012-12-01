@@ -8,7 +8,9 @@
 <div class="links rounded">
   <%= subtitle "Internet Links" %>
   <ul>
-    <li><%= link_to 'New York Times: Fast Food Even Before Fast Food', 'http://www.nytimes.com/2009/09/30/dining/30unit.html?_r=1', :rel => 'external' %></li>
+    <% @links.each do |link| %>
+    <li><%= link_to link.link_text, link.link_url %></li>
+    <% end %>
   </ul>
 </div>
 

@@ -16,6 +16,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :users
     admin.resources :about, :only => [:edit, :update, :show]
     admin.resources :testimonials
+    admin.resources :links
     admin.resources :menu_categories, :as => 'menu/categories',
       :collection => { :sortable => :get, :reorder => :post }
     admin.resources :menu_items, :as => 'menu/items',

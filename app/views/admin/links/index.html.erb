@@ -1,0 +1,25 @@
+<%= title "Links" %>
+
+<span class="right admin">
+  <%= link_to 'Add New', new_admin_link_path %>
+</span>
+
+<div class="clearfix"></div>
+
+<br />
+
+<% unless @links.blank? %>
+  <% list do %>
+    <% @links.each do |link| %>
+      <li class="<%= cycle 'odd', nil %>">
+        <span class="options">
+          <%= link_to 'Edit', edit_admin_link_path(link) %>
+          | <%= link_to 'Delete', admin_link_path(link), :method => :delete %>
+        </span>
+        <%= link_to link.link_text, link.link_url %>
+      </li>
+    <% end %>
+  <% end %>
+<% else %>
+  <p>Sorry, there aren't any links to list just yet.</p>
+<% end %>

@@ -2,6 +2,6 @@ class PressController < ApplicationController
   caches_page :index
   
   def index
-    render
+    @links = Link.all
   end
 end
