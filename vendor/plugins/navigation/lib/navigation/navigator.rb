@@ -80,7 +80,7 @@ module RPH
           items << self.view.content_tag(:li, self.view.link_to(text, path) + subnav, attrs)
         end
         
-        nested ? self.view.content_tag(:ul, links, :class => 'sub-navigation') : links
+        nested ? self.view.content_tag(:ul, links.join("\n"), :class => 'sub-navigation') : links.join("\n")
       end
       
       # determines if the menu item matches the current section
