@@ -29,4 +29,3 @@ config.action_view.cache_template_loading            = true
 
 # config.logger = Logger.new(STDOUT)
 # config.logger.level = Logger::INFO
-config.log_path = File.expand_path(Rails.root, 'log/production.log')
