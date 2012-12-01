@@ -6,3 +6,4 @@ gem 'RedCloth', '~> 4.2.7'
 gem 'rmagick', '~> 2.13.1', :require => false
 gem 'will_paginate', '~> 2.3.16'
 gem 'mysql'
+gem 'postgres'
