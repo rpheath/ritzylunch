@@ -1,5 +1,5 @@
 $(function() {
-  $('form:first *:input:text[type!=hidden]:first').focus()
+  $('form:first *:input:text[type!=hidden]:first').not('.subscribe').focus()
   
   $('a[rel=facebox]').facebox()
   

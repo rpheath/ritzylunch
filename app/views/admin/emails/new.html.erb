@@ -1,0 +1,11 @@
+<%= title "Send a New Email" %>
+
+<p class="soft">
+  The content you enter in the text area below will be sent out to all
+  of your subscribers once you click 'Send Email' below.
+</p>
+
+<% form_tag admin_emails_path do %>
+  <%= text_area_tag :body %>
+  <%= submit_tag "Send Email" %>
+<% end %>

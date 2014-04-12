@@ -1,0 +1,16 @@
+<%= title "Email Subscribers" %>
+
+<% unless @subscribers.blank? %>
+  <% list do %>
+    <% @subscribers.each do |subscriber| %>
+      <li class="<%= cycle 'odd', nil %>">
+        <span class="options">
+          <%= link_to 'Delete', admin_subscriber_path(subscriber), :method => :delete, :confirm => "Are you sure?" %>
+        </span>
+        <%= subscriber.email %>
+      </li>
+    <% end %>
+  <% end %>
+<% else %>
+  <p>There aren't any email subscribers to list just yet.</p>
+<% end %>

@@ -71,6 +71,20 @@
     	        Do you need to get in touch with us? Feel free to
     	        call us at (304) 622-3600 or <%= link_to 'send us an email', 'mailto:ritzylunchwv@gmail.com' %>.
     	      </p>
+
+    	      <h3>Subscribe via Email</h3>
+    	      <p class="soft">
+    	      	Enter your email to stay up-to-date with what's
+    	      	going on at The Ritzy!
+    	      </p>
+    	      <% form_tag subscribers_path do %>
+    	      	<%= text_field_tag :email, nil, :class => 'subscribe', :placeholder => "Your Email" %>
+    	      	<div class="secret">
+    	      		<%= text_field_tag :beware, nil %>
+    	      	</div>
+    	      	<%= submit_tag "Subscribe" %>
+    	      <% end %>
+
 	        </div>
 	      </div>
 	      
