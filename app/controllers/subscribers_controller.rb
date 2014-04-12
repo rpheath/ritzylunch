@@ -4,6 +4,11 @@ class SubscribersController < ApplicationController
 
     subscriber = Subscriber.new(:email => params[:email])
 
+    if Subscriber.exists?(:email => subscriber.email)
+      error "You've already signed up!"
+      redirect_to :back and return
+    end
+
     if subscriber.save
       notice "Thanks for signing up!"
     else
