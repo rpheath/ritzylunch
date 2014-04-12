@@ -1,3 +1,4 @@
+bin/
 log/test.log
 log/development.log
 log/server.log
